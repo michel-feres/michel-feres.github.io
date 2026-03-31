@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo - Michel Feres Caetano</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icons/dark.svg">
+  <link rel="icon" href="icons/light.svg" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="icons/dark.svg" media="(prefers-color-scheme: light)">
+</head>
+
+<script>
+  const favicon = document.querySelector("link[rel='icon']");
+  const media = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function updateFavicon(e) {
+    favicon.href = e.matches ? "icons/light.svg" : "icons/dark.svg";
+  }
+
+  updateFavicon(media);
+  media.addEventListener("change", updateFavicon);
+</script>
+
+<body>
+  <div id="container">
+    <header id="contact">
+      <div id="basic-info">
+        <img id="photo" src="img/michel.jpg" alt="" />
+        <h1>Michel Feres Caetano</h1>
+        <h3>Estudante de TI pronto para descobrir novas coisas!</h3>
+        <div id="contact-social">
+          <a href="https://www.linkedin.com/in/michel-feres"><img src="icons/linkedin.svg" /></a>
+          <a href="https://github.com/michelito10" target="_blank"><img src="icons/github.svg" /></a>
+        </div>
+      </div>
+    </header>
+    <main id="info">
+      <div id="resume">
+        <h2 class="arrow">Resumo</h2>
+        <p>Sou estudante que atualmente estou na Faculdade de Tecnologia - Fatec Jales, sou um desenvolvedor de sistemas
+          e faço isso por amor e como um hobby, pois gosto muito de investigar mais a cada dia sobre tecnologia e estou
+          cada vez me fortalecendo e aprendo novas coisas, mesmo com erros ou acertos.</p>
+      </div>
+      <div id="formation">
+        <h2 class="arrow">Formação</h2>
+        <ul>
+          <li>Graduando atualmente na Faculdade de Tecnologia Professor José Camargo - Fatec Jales no curso de Análise e
+            Desenvolvimento de Sistemas.</li>
+        </ul>
+      </div>
+      <div id="experience">
+        <h2 class="arrow">Experiência Profissional</h2>
+        <ul>
+          <li>Atualmente não possuo experiências profissionais!</li>
+        </ul>
+      </div>
+      <div id="technologies">
+        <h2 class="arrow">Principais Tecnologias</h2>
+        <div class="content">
+          <div>
+            <p>HTML</p>
+            <progress max="10" value="8"></progress>
+          </div>
+          <div>
+            <p>CSS</p>
+            <progress max="10" value="7"></progress>
+          </div>
+          <div>
+            <p>Javascript</p>
+            <progress max="10" value="6"></progress>
+          </div>
+          <div>
+            <p>Python</p>
+            <progress max="10" value="3"></progress>
+          </div>
+          <div>
+            <p>Bash</p>
+            <progress max="10" value="7"></progress>
+          </div>
+          <div>
+            <p>Git/GitHub</p>
+            <progress max="10" value="8"></progress>
+          </div>
+          <div>
+            <p>Postgres (SQL)</p>
+            <progress max="10" value="6"></progress>
+          </div>
+        </div>
+      </div>
+      <div id="hobbies">
+        <h2 class="arrow">Hobbies</h2>
+        <ul>
+          <li>Fotografia</li>
+          <li>Música</li>
+          <li>Tecnologia</li>
+          <li>Artes Digitais</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
