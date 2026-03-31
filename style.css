@@ -107,21 +107,21 @@ body {
 }
 
 progress {
-    width: 100%;
+    width: 10rem;
     height: 10px;
     appearance: none;
 }
 
 progress::-webkit-progress-bar {
-    background-color: transparent;
+    background-color: #444444;
 }
 
 progress::-webkit-progress-value {
-    background-color: #101010;
+    background-color: darkgray;
 }
 
 progress::-moz-progress-bar {
-    background-color: #101010;
+    background-color: darkgray;
 }
 
 @media screen and (min-width: 540px) {
