@@ -1,105 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Currículo - Michel Feres Caetano</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="icons/dark.svg">
-  <link rel="icon" href="icons/light.svg" media="(prefers-color-scheme: dark)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Michel Feres Caetano: trajetória, formação e estudos em Análise e Desenvolvimento de Sistemas na Fatec Jales.">
+  <meta name="theme-color" content="#10151d">
+  <title>Michel Feres | Portfólio acadêmico</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="icons/dark.svg" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="icons/light.svg" media="(prefers-color-scheme: dark)">
 </head>
-
-<script>
-  const favicon = document.querySelector("link[rel='icon']");
-  const media = window.matchMedia('(prefers-color-scheme: dark)');
-
-  function updateFavicon(e) {
-    favicon.href = e.matches ? "icons/light.svg" : "icons/dark.svg";
-  }
-
-  updateFavicon(media);
-  media.addEventListener("change", updateFavicon);
-</script>
-
 <body>
-  <div id="container">
-    <header id="contact">
-      <div id="basic-info">
-        <img id="photo" src="img/michel.jpg" alt="" />
-        <h1>Michel Feres Caetano</h1>
-        <h3>Estudante de TI pronto para descobrir novas experiências e tecnologias!</h3>
-        <div id="contact-social">
-          <a href="https://www.linkedin.com/in/michel-feres"><img src="icons/linkedin.svg" /></a>
-          <a href="https://github.com/michel-feres" target="_blank"><img src="icons/github.svg" /></a>
-        </div>
-      </div>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Michel Feres — início">
+        <span class="brand-mark">MF</span>
+        <span>Michel Feres</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="active" href="#sobre">Sobre</a>
+        <a href="#formacao">Formação</a>
+        <a href="#faculdade">Faculdade</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
-    <main id="info">
-      <div id="resume">
-        <h2 class="arrow">Resumo</h2>
-        <p>Sou estudante que atualmente estou na Faculdade de Tecnologia - Fatec Jales, sou um desenvolvedor de sistemas
-          e faço isso por amor e como um hobby, pois gosto muito de investigar mais a cada dia sobre tecnologia e estou
-          cada vez me fortalecendo e aprendo novas coisas, mesmo com erros ou acertos.</p>
-      </div>
-      <div id="formation">
-        <h2 class="arrow">Formação</h2>
-        <ul>
-          <li>Graduando atualmente na Faculdade de Tecnologia Professor José Camargo - Fatec Jales no curso de Análise e
-            Desenvolvimento de Sistemas.</li>
-        </ul>
-      </div>
-      <div id="experience">
-        <h2 class="arrow">Experiência Profissional</h2>
-        <ul>
-          <li>Atualmente não possuo experiências profissionais!</li>
-        </ul>
-      </div>
-      <div id="technologies">
-        <h2 class="arrow">Principais Tecnologias</h2>
-        <div class="content">
-          <div>
-            <p>HTML</p>
-            <progress max="10" value="8"></progress>
-          </div>
-          <div>
-            <p>CSS</p>
-            <progress max="10" value="7"></progress>
-          </div>
-          <div>
-            <p>Javascript</p>
-            <progress max="10" value="6"></progress>
-          </div>
-          <div>
-            <p>Python</p>
-            <progress max="10" value="3"></progress>
-          </div>
-          <div>
-            <p>Bash</p>
-            <progress max="10" value="7"></progress>
-          </div>
-          <div>
-            <p>Git/GitHub</p>
-            <progress max="10" value="8"></progress>
-          </div>
-          <div>
-            <p>Postgres (SQL)</p>
-            <progress max="10" value="6"></progress>
+
+    <main>
+      <section class="hero section-wrap" id="sobre">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> PORTFÓLIO ACADÊMICO · TECNOLOGIA</p>
+          <h1>Olá, eu sou<br><span>Michel Feres.</span></h1>
+          <p class="hero-lead">Estudante de Análise e Desenvolvimento de Sistemas na Fatec Jales, interessado em tecnologia, desenvolvimento de software e aprendizado contínuo.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#faculdade">Explorar disciplinas <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="https://github.com/michel-feres" target="_blank" rel="noopener noreferrer">Meu GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-      </div>
-      <div id="hobbies">
-        <h2 class="arrow">Hobbies</h2>
-        <ul>
-          <li>Fotografia</li>
-          <li>Música</li>
-          <li>Tecnologia</li>
-          <li>Artes Digitais</li>
-        </ul>
-      </div>
+        <aside class="profile-panel">
+          <div class="photo-frame">
+            <img src="img/michel.jpg" alt="Foto de Michel Feres Caetano">
+          </div>
+          <p class="profile-caption">Estudante &amp; desenvolvedor em formação</p>
+          <div class="profile-meta">
+            <span>BASE</span><strong>Jales, SP · Brasil</strong>
+          </div>
+          <div class="profile-meta">
+            <span>ÁREA</span><strong>Análise e Desenvolvimento de Sistemas</strong>
+          </div>
+        </aside>
+        <div class="hero-index" aria-hidden="true">01 / 02</div>
+      </section>
+
+      <section class="content-section section-wrap" id="formacao">
+        <div class="section-heading">
+          <p class="eyebrow">01 — QUEM SOU</p>
+          <h2>Sobre mim<span class="accent-dot">.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>Sou estudante da Faculdade de Tecnologia Professor José Camargo — Fatec Jales. Gosto de investigar como a tecnologia funciona, desenvolver soluções e aprender novas ferramentas e conceitos.</p>
+            <p>Encaro a programação como uma área de aprendizado constante: experimentar, encontrar problemas, compreender os erros e evoluir fazem parte do processo.</p>
+          </div>
+          <div class="education-card">
+            <span class="card-kicker">FORMAÇÃO ATUAL</span>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p>Faculdade de Tecnologia Professor José Camargo — Fatec Jales</p>
+            <span class="status-label"><span class="status-dot"></span> Em andamento</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section courses-section" id="faculdade">
+        <div class="section-wrap">
+          <div class="section-heading section-heading-split">
+            <div>
+              <p class="eyebrow">02 — GRADUAÇÃO</p>
+              <h2>O que estou estudando<span class="accent-dot">.</span></h2>
+              <p class="section-intro">Um espaço para organizar os conteúdos, conceitos, exercícios e projetos desenvolvidos ao longo do curso.</p>
+            </div>
+            <span class="course-count"><strong>12</strong><span>disciplinas</span></span>
+          </div>
+
+          <div class="course-grid">
+            <a class="course-card" href="disciplinas/projeto-integrador-i.html"><span class="course-number">01</span><span class="course-area">PROJETO</span><h3>Projeto Integrador I</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/banco-de-dados-relacional-nao-relacional.html"><span class="course-number">02</span><span class="course-area">DADOS</span><h3>Técnicas Avançadas de Banco de Dados Relacional e Não Relacional</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/estruturas-de-dados.html"><span class="course-number">03</span><span class="course-area">FUNDAMENTOS</span><h3>Estruturas de Dados</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/engenharia-de-software.html"><span class="course-number">04</span><span class="course-area">ENGENHARIA</span><h3>Engenharia de Software</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/interacao-humano-computador.html"><span class="course-number">05</span><span class="course-area">DESIGN</span><h3>Interação Humano Computador</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/programacao-avancada.html"><span class="course-number">06</span><span class="course-area">DESENVOLVIMENTO</span><h3>Técnicas Avançadas de Programação</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/programacao-web-mobile.html"><span class="course-number">07</span><span class="course-area">DESENVOLVIMENTO</span><h3>Técnicas Avançadas de Programação Web e Mobile</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/inteligencia-corporativa-modelos-negocios.html"><span class="course-number">08</span><span class="course-area">NEGÓCIOS &amp; DADOS</span><h3>Inteligência Corporativa e Modelos de Negócios na Era Digital</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/gestao-agil-projetos-software.html"><span class="course-number">09</span><span class="course-area">GESTÃO</span><h3>Gestão Ágil de Projetos de Software</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/organizacao-computadores-sistemas-operacionais.html"><span class="course-number">10</span><span class="course-area">FUNDAMENTOS</span><h3>Organização de Computadores e Sistemas Operacionais</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/lingua-inglesa-i.html"><span class="course-number">11</span><span class="course-area">COMUNICAÇÃO</span><h3>Língua Inglesa I</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+            <a class="course-card" href="disciplinas/matematica-discreta.html"><span class="course-number">12</span><span class="course-area">FUNDAMENTOS</span><h3>Matemática Discreta</h3><span class="card-arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <p class="courses-note">Os resumos são um ponto de partida. O conteúdo de cada página será complementado com anotações, atividades e projetos efetivamente trabalhados em aula.</p>
+        </div>
+      </section>
+
+      <section class="content-section section-wrap" id="tecnologias">
+        <div class="section-heading">
+          <p class="eyebrow">03 — FERRAMENTAS</p>
+          <h2>Tecnologias e interesses<span class="accent-dot">.</span></h2>
+        </div>
+        <div class="skills-grid">
+          <div>
+            <h3>Tecnologias</h3>
+            <div class="tag-list">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Bash</span><span>Git</span><span>GitHub</span><span>PostgreSQL</span>
+            </div>
+          </div>
+          <div>
+            <h3>Interesses</h3>
+            <div class="tag-list">
+              <span>Fotografia</span><span>Música</span><span>Tecnologia</span><span>Artes digitais</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contato">
+        <div class="section-wrap contact-inner">
+          <div>
+            <p class="eyebrow">04 — CONEXÕES</p>
+            <h2>Vamos acompanhar<br>essa jornada<span class="accent-dot">?</span></h2>
+            <p>Este portfólio acompanha minha evolução acadêmica e reúne os conhecimentos construídos durante a graduação.</p>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/michel-feres" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/michel-feres" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer section-wrap">
+      <span>© <span id="year">2026</span> Michel Feres Caetano</span>
+      <a href="#sobre">Voltar ao início ↑</a>
+    </footer>
   </div>
 </body>
-
 </html>
