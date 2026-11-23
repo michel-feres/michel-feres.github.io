@@ -186,12 +186,11 @@ a:focus-visible { outline: 1px solid var(--white); outline-offset: 5px; }
 .technology-block {
   display: grid;
   grid-template-columns: .85fr 1.15fr;
-  gap: 9%;
   align-items: start;
-  padding-top: 62px;
+  padding-top: 100px;
 }
 .technology-block h3 { margin: 0; font-family: var(--serif); font-size: 41px; font-weight: 400; letter-spacing: -.03em; }
-.technology-list { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 8px; }
+.technology-list { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 5px; }
 .technology-list span {
   padding: 9px 13px;
   border: 1px solid #55514c;
